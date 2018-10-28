@@ -1,18 +1,25 @@
 ---
 title: Match All Letters and Numbers
 ---
-The Problem
-Use the shorthand character class \w to count the number of alphanumeric characters in various quotes and strings.
-
-Solution
-let quoteSample = "The five boxing wizards jump quickly.";
-let alphabetRegexV2 = /\w/gi; // Change this line
-let result = quoteSample.match(alphabetRegexV2).length;
 
 ## Match All Letters and Numbers
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/javascript-algorithms-and-data-structures/regular-expressions/match-all-letters-and-numbers/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+Use the shorthand character class `\w` to count the number of alphanumeric characters in various quotes and strings.
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
+## Hint 1:
 
-<!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+Be sure to include the `g` flag. You won't need the `i` flag here (but it's fine if you do) since `\w` covers both lower and uppercase letters. 
+
+
+## Spoiler Alert - Solution Ahead!
+
+## Solution:
+
+```javascript
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g;
+let result = quoteSample.match(alphabetRegexV2).length;
+```
+
+
+
